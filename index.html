@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ar Encrypt</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css">
+<meta name="theme-color" content="#2277d6">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <img src="icons/icon-192.png" alt="Ar Encrypt" class="logo">
+    <h1>Ar Encrypt</h1>
+  </div>
+  <button id="langToggle" class="langBtn">EN</button>
+</header>
+
+<main class="container">
+  <section class="card">
+    <label>اختر ملف / Choose file</label>
+    <input id="fileInput" type="file">
+    <label>نوع العملية / Operation</label>
+    <select id="operation">
+      <option value="encrypt">تشفير / Encrypt</option>
+      <option value="decrypt">فك تشفير / Decrypt</option>
+    </select>
+    <label>كلمة السر / Password</label>
+    <input id="password" type="password" placeholder="Enter password">
+    <div class="row">
+      <button id="genKey" class="primary">🎲 Generate</button>
+      <button id="startBtn" class="primary">ابدأ / Start</button>
+    </div>
+    <div id="status" class="status"></div>
+  </section>
+
+  <section class="card about">
+    <h3>About / حول</h3>
+    <p>App created by <strong>Aria Sirwan</strong></p>
+    <p>Email: <a href="mailto:aria.411322026@uor.edu.krd">aria.411322026@uor.edu.krd</a></p>
+  </section>
+</main>
+
+<script src="js/app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js').catch(()=>{});
+}
+</script>
+</body>
+</html>

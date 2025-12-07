@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.aria.arencrypt" version="1.0.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Ar Encrypt</name>
+  <description>Ar Encrypt — AES-GCM File Encryptor by Aria Sirwan</description>
+  <author email="aria.411322026@uor.edu.krd">Aria Sirwan</author>
+  <content src="index.html" />
+  <access origin="*" />
+  <preference name="Orientation" value="portrait" />
+  <preference name="Fullscreen" value="false" />
+  <platform name="android">
+    <allow-intent href="market:*" />
+  </platform>
+</widget>
